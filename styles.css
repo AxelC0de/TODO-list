@@ -1,0 +1,17 @@
+.todo{
+	padding: 5px;
+	border: 1px solid #000000;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.todo:hover{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.todo.isDone {
+	background-color: #000000;
+	color: #ffffff;
+
+}
