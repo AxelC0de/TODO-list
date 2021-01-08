@@ -22,8 +22,6 @@ let makeDone = (event) => {
 			state.todos[i].isComplete = true;
 		}
 	}
-	console.log(event);
-	console.log(state.todos);
 }
 // функция, которая отрисовывает список TODO
 let renderTodos = () => {
@@ -71,7 +69,6 @@ let clearInput = () => {
 let deleteElement = (event) => {
 	// найти кликнутый элемент
 	let elem = event.target
-	console.log(elem);
 	let myId = Number(event.target.dataset.dateid);
 	for (let i = 0; i < state.todos.length; i++) {
 		if (myId === state.todos[i].id) {
@@ -100,7 +97,6 @@ ADD_BTN.addEventListener('click', () => { //
 		date = new Date().getSeconds();// получение текущей даты, когда пользователь нажимает на кнопку "добавить"
 		addItem(value, date)
 		clearInput();
-		console.dir(state.todos);
 		renderTodos();
 	}
 
@@ -109,5 +105,4 @@ ADD_BTN.addEventListener('click', () => { //
 CLEAR_BTN.addEventListener('click', () => {
 	state.todos = [];
 	renderTodos();
-	console.dir(state.todos);
 })
