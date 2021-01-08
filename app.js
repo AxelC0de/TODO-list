@@ -16,9 +16,9 @@ let state =
 
 let makeDone = (event) => {
 	event.target.classList.add('isDone'); // при событии клика мыши в HTML прописывается класс ISDONE
-	let myId = event.target.dataset.dateid;
+	let myId = Number(event.target.dataset.dateid);
 	for (let i = 0; i < state.todos.length; i++) {
-		if (myId == state.todos[i].id) {
+		if (myId === state.todos[i].id) {
 			state.todos[i].isComplete = true;
 		}
 	}
@@ -57,8 +57,7 @@ let addItem = (descr, date) => {
 
 // получает строку с введенным текстом из поля ввода
 let getInputValue = () => {
-	let value = INPUT.value
-	return value
+	return INPUT.value
 }
 //очистка введенного текста в инпут
 let clearInput = () => {
@@ -70,14 +69,12 @@ let clearInput = () => {
 
 
 let deleteElement = (event) => {
-
-
 	// найти кликнутый элемент
 	let elem = event.target
 	console.log(elem);
-	let myId = event.target.dataset.dateid;
+	let myId = Number(event.target.dataset.dateid);
 	for (let i = 0; i < state.todos.length; i++) {
-		if (myId == state.todos[i].id) {
+		if (myId === state.todos[i].id) {
 			state.todos.splice(i, 1)
 
 		}
@@ -114,13 +111,3 @@ CLEAR_BTN.addEventListener('click', () => {
 	renderTodos();
 	console.dir(state.todos);
 })
-
-
-
-	// TODO
-	//  4) внести все на ГИТ, ссылку Лехе
-	//<select>
-	< option > Вначале выполненные</option >
-		<option>Вначале НЕ выполненые</option>
-			</select >
-	<button>Сброс фильтра</button>
