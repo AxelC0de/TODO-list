@@ -1,0 +1,19 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "todo-list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redknight777999/TODO-list.git"
+  },
+  "author": "Aleksey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redknight777999/TODO-list/issues"
+  },
+  "homepage": "https://github.com/Redknight777999/TODO-list#readme"
+}
