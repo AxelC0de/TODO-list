@@ -10,7 +10,7 @@ select.addEventListener('change', (e) => {
 		//код который покажет все элементы
 		//у всего массива todos удаляем класс hide
 	}
-	
+
 
 	// for (let i = 0; i < todos.length; i++) {
 	// 	if (todos[i].classList.contains('isDone')) {
@@ -21,3 +21,5 @@ select.addEventListener('change', (e) => {
 
 
 })
+
+
