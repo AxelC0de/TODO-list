@@ -1,50 +1,23 @@
-let todos = [
-	{
-		id: 123123,
-		description: 'asdfasdfsadfasdf'
-	},
+let select = document.querySelector('select');
+console.log(select);
+select.addEventListener('change', (e) => {
 
-	{
-		id: 123123,
-		description: 'asdfasdfsadfasdf'
-	},
-
-	{
-		id: 123123,
-		description: 'asdfasdfsadfasdf'
-	},
-
-	{
-		id: 123123,
-		description: 'asdfasdfsadfasdf'
+	let todos = document.querySelectorAll('.todo');
+	console.log(e);
+	console.log('ok');
+	console.log(select.value);
+	if (select.value==='Все') {
+		//код который покажет все элементы
+		//у всего массива todos удаляем класс hide
 	}
-]
+	
 
-let objTodos = {
-	start: {
-		linkToPrewElem: null,
-		description: 'start',
-		linkToNextElement: 2
+	// for (let i = 0; i < todos.length; i++) {
+	// 	if (todos[i].classList.contains('isDone')) {
+	// 		todos[i].classList.add('hide');
+	// 	}
 
-	},
+	// }
 
-	2: {
-		linkToPrewElem: 'start',
-		description: 'second elem',
-		linkToNextElement: 'finish'
-	},
 
-	finish: {
-		description: 'another second elem',
-		linkToNextElement: null
-	},
-
-}
-
-objTodos.newFinish = {
-	description: 'asdfasdfs',
-	linkToNextElement: null
-}
-objTodos.finish.linkToNextElement = 'newFinish'
-
-console.log(objTodos);
+})

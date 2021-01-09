@@ -13,7 +13,6 @@ let state =
 // при добавлении элемента сразу вешать на него слушатель.
 // По клику на элемент To - Do меняется его состояние на черно - белое + записываем isComplete: true
 
-
 let makeDone = (event) => {
 	event.target.classList.add('isDone'); // при событии клика мыши в HTML прописывается класс ISDONE
 	let myId = Number(event.target.dataset.dateid);
