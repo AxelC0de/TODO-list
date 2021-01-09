@@ -120,7 +120,7 @@ CLEAR_BTN.addEventListener('click', () => {
 	// TODO
 	//  4) внести все на ГИТ, ссылку Лехе
 	//<select>
-	< option > Вначале выполненные</option >
-		<option>Вначале НЕ выполненые</option>
-			</select >
-	<button>Сброс фильтра</button>
+	// < option > Вначале выполненные</option >
+	// 	<option>Вначале НЕ выполненые</option>
+	// 		</select >
+	// <button>Сброс фильтра</button>
