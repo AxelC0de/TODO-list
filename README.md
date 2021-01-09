@@ -20,3 +20,5 @@ https://medium.com/@sshambir/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%91%D0%BC-%D0%BF%D
 https://linda-ikechukwu.github.io/Todo-App/
 
 https://habr.com/ru/post/118804/
+
+Telegram: @DP_TodoList_bot
