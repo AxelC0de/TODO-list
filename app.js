@@ -106,14 +106,3 @@ CLEAR_BTN.addEventListener('click', () => {
 	state.todos = [];
 	renderTodos();
 })
-
-
-let testFunc=async ()=>{
-	try {
-	let response = await fetch('http://localhost:3000/?q=getstate&name=aleksey')
-	}
-	catch (e){
-		console.log(e)
-	}
-};
-document.getElementById('testBtn').addEventListener('click',testFunc)
