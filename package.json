@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Redknight777999/TODO-list/issues"
   },
-  "homepage": "https://github.com/Redknight777999/TODO-list#readme"
+  "homepage": "https://github.com/Redknight777999/TODO-list#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
